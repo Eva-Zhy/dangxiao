@@ -1,0 +1,62 @@
+<view class="userinfo">
+  <image class="head-img" src="../../images/image_1.png"></image>
+  <view class="head-name">最佳党员001</view>
+</view>
+<view class="new-v">
+  <image class="new-img" src="../../images/button_1@2x.png"></image>
+  <view class="new-text">新发布</view>
+</view>
+<view class="content-v">
+  <view class="content-title">全部状态</view>
+  <view class="photo-item">
+    <view class="photo-item-left">
+      <view class="yue">12月</view>
+      <view class="nian">2019年</view>
+    </view>
+    <view class="photo-item-right">
+      <view class="title">适势求是：基层民主富于活力</view>
+      <view class="photo-item-content">
+        <view class="photo-item-img">
+          <image class="img100" src="../../images/pic_6@2x.png"></image>
+        </view>
+        <view class="photo-item-text">
+          9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰…
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="photo-item">
+    <view class="photo-item-left">
+      <view class="yue">12月</view>
+      <view class="nian">2019年</view>
+    </view>
+    <view class="photo-item-right">
+      <view class="title">适势求是：基层民主富于活力</view>
+      <view class="photo-item-content">
+        <view class="photo-item-img">
+          <image class="img100" src="../../images/pic_6@2x.png"></image>
+        </view>
+        <view class="photo-item-text">
+          9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰…
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="photo-item">
+    <view class="photo-item-left">
+      <view class="yue">12月</view>
+      <view class="nian">2019年</view>
+    </view>
+    <view class="photo-item-right">
+      <view class="title">适势求是：基层民主富于活力</view>
+      <view class="photo-item-content">
+        <view class="photo-item-img">
+          <image class="img100" src="../../images/pic_6@2x.png"></image>
+        </view>
+        <view class="photo-item-text">
+          9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰…
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

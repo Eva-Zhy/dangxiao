@@ -1,0 +1,62 @@
+page {
+  background-color: #fff;
+}
+
+.userinfo-v {
+  width: 100%;
+  height: 370rpx;
+  background-color: #cb2a2a;
+}
+
+.head-img-v {
+  width: 100%;
+  height: 180rpx;
+  float: left;
+  margin-top: 60rpx;
+}
+
+.head-img {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+}
+
+.head-name {
+  width: 100%;
+  text-align: center;
+  font-size: 37rpx;
+  color: #fff;
+  margin-top: 20rpx;
+  float: left;
+}
+
+.menu-item {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #333;
+  font-size: 32rpx;
+  float: left;
+  padding-left: 30rpx;
+  position: relative;
+  border-bottom: 1px solid #e2e3e4;
+}
+
+.message {
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  background-color: #e02020;
+  position: absolute;
+  color: #fff;
+  font-size: 20rpx;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 99;
+  top: 22rpx;
+  left: 162rpx;
+}

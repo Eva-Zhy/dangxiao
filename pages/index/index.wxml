@@ -1,0 +1,95 @@
+<swiper class="swiper" autoplay="true" circular="true" indicator-dots="true" indicator-color="#E6E6E6" previous-margin='70rpx' next-margin="70rpx" indicator-active-color="#FF6315" bindchange="bindchange">
+  <swiper-item class="back center " wx:for='{{imgUrls}}' wx:for-index="index">
+    <view class="wrap">
+      <image class="back cradBg {{swiperIndex==index?'active':'quiet'}}" src='{{item}}'></image>
+    </view>
+  </swiper-item>
+</swiper>
+
+<view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+  <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index<gridCol*2}}">
+    <view class="cuIcon-{{item.icon}}">
+      <!-- <view class="cu-tag badge" wx:if="{{item.badge!=0}}"> -->
+      <!-- <block wx:if="{{item.badge!=1}}">{{item.badge>99?"99+":item.badge}}</block> -->
+      <!-- </view> -->
+      <image class="index-icon" src="{{item.icon}}"></image>
+      <view class="index-icon-num" wx:if="{{item.badge!=0}}">{{item.badge}}</view>
+    </view>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+<view class="myline"></view>
+<view class="tongzhi">
+  <view class="tz-content">
+    <view class="tz-icon">
+      <image class="tz-icon-img" src="../../images/tz.png"></image>
+    </view>
+    <view class="tz-content-text">222222222222222222222222222222222222</view>
+    <view class="tz-flow">
+      <image class="img100" class="tz-icon-img" src="../../images/More_1.png"></image>
+    </view>
+  </view>
+</view>
+<view class="myline"></view>
+<view class="content">
+  <view class="content-v">
+    <view class="content-title">
+      <view class="content-line"></view>
+      <view class="title-text">党建VR学习</view>
+      <image class="img100" class="more-v-img" src="../../images/more_2@2x.png"></image>
+      <view class="more-v">更多</view>
+    </view>
+    <view class="study-v">
+      <view class="study-item">
+        <image class="study-item-img" src="../../images/1.png"></image>
+        <view class="study-item-text">五四纪念馆</view>
+      </view>
+      <view class="study-item" style="margin-left:22rpx;">
+        <image class="study-item-img" src="../../images/1.png"></image>
+        <view class="study-item-text">五四纪念馆</view>
+      </view>
+      <view class="study-item" style="margin-left:22rpx;">
+        <image class="study-item-img" src="../../images/1.png"></image>
+        <view class="study-item-text">五四纪念馆</view>
+      </view>
+    </view>
+    <view class="content-title">
+      <view class="content-line"></view>
+      <view class="title-text">武林动态</view>
+      <image class="img100" class="more-v-img" src="../../images/more_2@2x.png"></image>
+      <view class="more-v">更多</view>
+    </view>
+    <view class="news-v">
+      <view class="news-item">
+        <view class="news-item-left">
+          <image class="img100" src="../../images/2.png"></image>
+        </view>
+        <view class="news-item-right">
+          <view class="news-item-title">中国共产党党内法规执行责任制规定</view>
+          <view class="news-item-content">9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民</view>
+          <view class="news-item-time">2019-12-26</view>
+        </view>
+      </view>
+         <view class="news-item">
+        <view class="news-item-left">
+          <image class="img100" src="../../images/2.png"></image>
+        </view>
+        <view class="news-item-right">
+          <view class="news-item-title">中国共产党党内法规执行责任制规定</view>
+          <view class="news-item-content">9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民</view>
+          <view class="news-item-time">2019-12-26</view>
+        </view>
+      </view>
+         <view class="news-item">
+        <view class="news-item-left">
+          <image class="img100" src="../../images/2.png"></image>
+        </view>
+        <view class="news-item-right">
+          <view class="news-item-title">中国共产党党内法规执行责任制规定</view>
+          <view class="news-item-content">9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民</view>
+          <view class="news-item-time">2019-12-26</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
