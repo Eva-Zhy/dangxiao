@@ -1,0 +1,79 @@
+page {
+  background-color: #fff;
+}
+
+.code-title {
+  width: 100vw;
+  text-align: center;
+  float: left;
+  font-size: 35rpx;
+  margin-top: 60rpx;
+  color: #333;
+}
+
+.code-v {
+  width: 100vw;
+  height: 420rpx;
+  background-color: #f7f8f9;
+}
+
+.code-num {
+  width: 100vw;
+  text-align: center;
+  float: left;
+  font-size: 125rpx;
+  margin-top: 30rpx;
+  font-weight: 600;
+  color: #cb2a2a;
+}
+
+.code-sm {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  float: left;
+  font-size: 25rpx;
+  margin-top: 30rpx;
+  color: #666;
+}
+
+.study-item {
+  width: 100%;
+  height: 120rpx;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 1px solid #e8e8e9;
+}
+
+.study-item-title {
+  width: 450rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 35rpx;
+  font-weight: 600;
+  color: #333;
+  float: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.study-item-status {
+  width: 150rpx;
+  height: 120rpx;
+  float: right;
+  text-align: right;
+  line-height: 120rpx;
+  font-size: 25rpx;
+  color: #CB2A2A;
+}
+
+.study-item-status2 {
+  width: 150rpx;
+  height: 120rpx;
+  float: right;
+  text-align: right;
+  line-height: 120rpx;
+  font-size: 25rpx;
+  color: #2ACB56;
+}

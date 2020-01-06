@@ -1,0 +1,21 @@
+page {
+  background-color: #fff;
+}
+.box-text{
+  border: 1px solid #E5E5E5;
+  width: 92%;
+  height: 400rpx;
+  border-radius:2px;
+  margin-left: 30rpx;
+  padding: 30rpx;
+  background-color:rgba(255,255,255,1);
+}
+.sure{
+  width: 160rpx;
+  height: 80rpx;
+  margin-top: 25rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #D12D1F;
+  color:#fff;
+}

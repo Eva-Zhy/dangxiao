@@ -1,0 +1,19 @@
+<view class="title1">您好，欢迎使用</view>
+<view class="title2">党建智慧平台</view>
+
+<view style="margin-top:100rpx;" class="input-v">
+  <input class="user-inp" placeholder="请输入用户名">
+  </input>
+</view>
+<view class="input-v">
+  <input class="user-inp" type="password" placeholder="请输入密码">
+  </input>
+</view>
+
+<view class="menu-v">
+  <checkbox class="check-box red"></checkbox>
+  <view class="menu-t1">记住密码</view>
+  <view class="menu-t2">忘记密码</view>
+</view>
+
+<button class="sure">登录</button>

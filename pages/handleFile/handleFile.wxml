@@ -1,0 +1,22 @@
+<view class="file-item">
+  <view class="file-item-title-v" style="float:left;">
+    <view class="file-item-title">公文拟办标题</view>
+    <view class="file-item-time">批复</view>
+  </view>
+  <text style="float:left;" class="file-cotent">今年以来，在贵厅的大力支持下，我局各项工作的开展得到了较好的经费保障，确保了物价工作的顺利进行，取得了很好的工作成效。但根据实际工作的工作的工作的工</text>
+  <view style="float:left;" class="show-cotent">展开文字</view>
+</view>
+
+<view class="file-item">
+  <view class="file-item-title-v" style="float:left;">
+    <view class="file-item-title">公文拟办标题</view>
+    <view class="file-item-time">批复</view>
+  </view>
+  <text style="float:left;" class="file-cotent">今年以来，在贵厅的大力支持下，我局各项工作的开展得到了较好的经费保障，确保了物价工作的顺利进行，取得了很好的工作成效。但根据实际工作的工作的工作的工</text>
+  <view style="float:left;" class="show-cotent">展开文字</view>
+
+  <view class="file-item-title-v" style="float:left;">
+    <view class="file-item-title">关于请示公文批复</view>
+  </view>
+  <text style="float:left;" class="file-cotent">经国务院批准，同意撤销南通县，设立通州市(县级)，由省直辖，以原南通县的行政区域为通州市的行政区域，不增加机构和人员编制。</text>
+</view>

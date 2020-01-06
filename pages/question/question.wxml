@@ -1,0 +1,37 @@
+<!-- 仿微信朋友圈 -->
+<scroll-view class='page'>
+  <!-- 列表 -->
+  <view class='CircleList' wx:for='{{DataSource}}'>
+    <!-- 头像、昵称、内容 -->
+    <view class='body-view'>
+      <!-- 头像 -->
+      <view class='left-view'>
+        <image class='user-icon' src='{{icon}}'></image>
+      </view>
+      <view class='right-view'>
+        <!-- 昵称 -->
+        <view class='user-name-view'>
+          <label class='user-name'>{{name}}</label>
+        </view>
+         <!-- 昵称 -->
+        <view class='user-name-view'>
+          <label class='user-time'>{{time}}</label>
+        </view>
+        <view class='user-name-view user-content-title' style="width: 580rpx; overflow: hidden;text-overflow:ellipsis;white-space: nowrap;">人大常委会主任李纪恒在呼和浩特看望慰问
+        </view>
+        <!-- 内容 -->
+        <view class='user-content-view'>
+          <text class='user-content'>{{content}}</text>
+        </view>
+        <!-- 图片 -->
+        <view  class='user-content-view'>
+          <image class="message" src="../../images/Message@2x.png"></image>
+        </view>
+         <!-- 内容 -->
+        <view class='user-content-view' >
+          <text style="margin-top:30rpx; float:left; color:#666666;" class='user-content'>回复：{{content}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

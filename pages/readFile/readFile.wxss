@@ -1,0 +1,68 @@
+page {
+  background-color: #fff;
+}
+
+.file-item {
+  width: 100vw;
+  height: 230rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 1px solid #e8e8e9;
+}
+
+.file-item-title-v {
+  width: 100%;
+  height: 40rpx;
+  float: left;
+}
+
+.file-item-title {
+  width: auto;
+  max-width: 350rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  float: left;
+  color: #333;
+  font-weight: 600;
+  font-size: 31rpx;
+}
+
+.file-item-status {
+  height: 36rpx;
+  width: 90rpx;
+  text-align: center;
+  float: left;
+  line-height: 36rpx;
+  border-radius: 7rpx;
+  color: #e6a23c;
+  font-size: 25rpx;
+  border: 1px solid #f5dad1;
+  margin-left: 8rpx;
+  background-color: #fdf5e6;
+}
+
+.file-cotent {
+  width: 100%;
+  height: 120rpx;
+  font-size: 28rpx;
+  color: #333;
+  letter-spacing: 0;
+  overflow: hidden;
+  float: left;
+  margin-top: 5rpx;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3; /*要显示的行数*/
+  -webkit-box-orient: vertical;
+}
+
+.file-item-time {
+  width: auto;
+  height: 40rpx;
+  line-height: 40rpx;
+  float: right;
+  font-size: 28rpx;
+  color: #999;
+}

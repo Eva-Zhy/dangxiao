@@ -1,6 +1,19 @@
 {
   "pages": [
+    "pages/notice/msgInfo/msgInfo",
+    "pages/handleFile/handleFile",
+    "pages/readFile/readFile",
+    "pages/feedback/new/new",
+    "pages/feedback/feedback",
+    "pages/notice/notice",
+    "pages/question/question",
+    "pages/myMessage/myMessage",
+    "pages/login/login",
     "pages/index/index",
+    "pages/photo/editor/editor",
+    "pages/photo/info/info",
+    "pages/activity/activity",
+    "pages/vrStudy/vrStudy",
     "pages/me/me",
     "pages/photo/photo"
   ],
@@ -17,20 +30,20 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "selectedIconPath": "/images/home_1@2x.png",
-        "iconPath": "/images/home_1@2x2.png"
+        "selectedIconPath": "/images/home_1@2x2.png",
+        "iconPath": "/images/home_1@2x.png"
       },
       {
         "pagePath": "pages/photo/photo",
         "text": "随手拍",
-        "selectedIconPath": "/images/Photo_2@2x2.png",
-        "iconPath": "/images/Photo_2@2x.png"
+        "selectedIconPath": "/images/Photo_2@2x.png",
+        "iconPath": "/images/Photo_2@2x2.png"
       },
       {
         "pagePath": "pages/me/me",
         "text": "我的",
-        "selectedIconPath": "/images/Profile_2@2x2.png",
-        "iconPath": "/images/Profile_2@2x.png"
+        "selectedIconPath": "/images/Profile_2@2x.png",
+        "iconPath": "/images/Profile_2@2x2.png"
       }
     ]
   },

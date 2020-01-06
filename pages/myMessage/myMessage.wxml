@@ -1,0 +1,18 @@
+<view  class="content-v">
+  <view class="message-item">
+    <view class="message-item-title">中国共产党党内法规执行责任制规定</view>
+    <view class="message-item-content">
+      <text style="color:#E5B224;  font-weight: 600;">附件 </text>
+      <text>9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民楷模”“人民楷模”“人民楷模”</text>
+    </view>
+    <view class="message-item-time">2019-12-19</view>
+  </view>
+  <view class="message-item">
+    <view class="message-item-title">中国共产党党内法规执行责任制规定</view>
+    <view class="message-item-content">
+      <text style="color:#E5B224;  font-weight: 600;">附件 </text>
+      <text>9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民楷模”“人民楷模”“人民楷模”</text>
+    </view>
+    <view class="message-item-time">2019-12-19</view>
+  </view>
+</view>

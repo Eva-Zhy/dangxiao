@@ -1,0 +1,76 @@
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{index==TabCur?'text-color cur':''}}" wx:for="{{tabValue}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</scroll-view>
+<view wx:if="{{TabCur == 0}}" class="content-v">
+  <view class="zcwj-item">
+    <view class="zcwj-item-left">• 中国共产党党内法规执行</view>
+    <view class="zcwj-item-right">2019-12-18</view>
+  </view>
+  <view class="zcwj-item">
+    <view class="zcwj-item-left">• 中国共产党党内法规执行</view>
+    <view class="zcwj-item-right">2019-12-18</view>
+  </view>
+  <view class="zcwj-item">
+    <view class="zcwj-item-left">• 中国共产党党内法规执行</view>
+    <view class="zcwj-item-right">2019-12-18</view>
+  </view>
+</view>
+
+<view wx:if="{{TabCur == 1}}" class="content-v">
+  <view class="news-item">
+    <view class="news-item-left">
+      <image class="img100" src="../../images/2.png"></image>
+    </view>
+    <view class="news-item-right">
+      <view class="news-item-title">中国共产党党内法规执行责任制规定</view>
+      <view class="news-item-content">9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民</view>
+      <view class="news-item-time">2019-12-26</view>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{TabCur == 2}}" class="content-v">
+  <view class="message-item">
+    <view class="message-item-title">中国共产党党内法规执行责任制规定</view>
+    <view class="message-item-content">
+      <text style="color:#E5B224;  font-weight: 600;">附件 </text>
+      <text>9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民楷模”“人民楷模”“人民楷模”</text>
+    </view>
+    <view class="message-item-time">2019-12-19</view>
+  </view>
+  <view class="message-item">
+    <view class="message-item-title">中国共产党党内法规执行责任制规定</view>
+    <view class="message-item-content">
+      <text style="color:#E5B224;  font-weight: 600;">附件 </text>
+      <text>9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民楷模”“人民楷模”“人民楷模”</text>
+    </view>
+    <view class="message-item-time">2019-12-19</view>
+  </view>
+</view>
+
+<view wx:if="{{TabCur == 3}}" class="content-v">
+  <view class="file-item">
+    <view class="file-item-left">
+      <image class="img100" src="../../images/pdf@2x.png"></image>
+    </view>
+    <view class="file-item-min">
+      <view class="file-item-title">中国共产党党内法规执行责任制规定</view>
+      <view class="file-item-max">5.26M</view>
+    </view>
+    <view class="file-item-right">2019-12-18</view>
+  </view>
+  <view class="file-item">
+    <view class="file-item-left">
+      <image class="img100" src="../../images/pdf@2x.png"></image>
+    </view>
+    <view class="file-item-min">
+      <view class="file-item-title">中国共产党党内法规执行责任制规定</view>
+      <view class="file-item-max">5.26M</view>
+    </view>
+    <view class="file-item-right">2019-12-18</view>
+  </view>
+</view>

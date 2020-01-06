@@ -1,0 +1,24 @@
+<view class="msgInfo-v ">
+
+</view>
+<view class="myline"></view>
+<view class="pdf-v">附件 关于表彰2019年度先进党支部及优秀党员.PDF</view>
+<view class="myline"></view>
+<view class="read-v">
+  <view class="read-t">
+    <view class="read-t1">已阅读</view>
+    <view class="read-t2">折叠</view>
+  </view>
+  <view class="read-user-v">
+    <view class="read-user">
+      <view wx:for="{{11}}" class="user-head">
+        <image class="img100" src="../../../images/image_1.png"></image>
+      </view>
+    </view>
+    <view class="read-more">
+      <view class="user-head">
+        <image class="img100" src="../../../images/dian.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

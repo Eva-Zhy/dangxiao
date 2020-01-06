@@ -1,0 +1,9 @@
+<form>
+  <view style="height:100rpx;" class="cu-form-group margin-top box-text">
+    <input style="height:100%;" bindinput="titleAInput" placeholder="请输入标题"></input>
+  </view>
+  <view class="cu-form-group margin-top box-text">
+    <textarea style="height:100%;" maxlength="200" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="请输入正文/200字以内"></textarea>
+  </view>
+  <button class="sure">发布</button>
+</form>
