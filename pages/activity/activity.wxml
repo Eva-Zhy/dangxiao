@@ -1,10 +1,10 @@
-<view class="card-v">
-  <view class="card-title">“不忘初心，牢记使命”教育活动方案</view>
+<view data-value="{{item}}" bindtap="goInfo" wx:for="{{list}}" class="card-v">
+  <view  class="card-title">{{item.title}}</view>
   <view class="card-img">
-    <image class="img100" src="../../images/3.png"></image>
+    <image class="img100" src="{{item.image_path}}"></image>
   </view>
   <view class="card-msg">
-    <view class="card-time">时间：2019年12月18日</view>
+    <view class="card-time">时间：{{item.release_time}}</view>
     <image class="card-more-icon" src="../../images/more_2@2x.png"></image>
     <view class="card-more">查看更多</view>
   </view>

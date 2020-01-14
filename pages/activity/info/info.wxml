@@ -1,0 +1,13 @@
+<view class="info-v">
+  <view class="info-title">{{value.title}}</view>
+  <view  class="info-msg">
+    <view class="info-time">开始时间：{{value.release_time}}</view>
+    <view class="info-from">结束时间：{{value.due_time}}</view>
+  </view>
+  <view wx:if="{{value.image_path}}" class="info-img">
+    <image class="img100" src="{{value.image_path}}"></image>
+  </view>
+  <view class="text-v">
+    {{value.text}}
+  </view>
+</view>

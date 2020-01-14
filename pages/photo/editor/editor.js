@@ -1,4 +1,8 @@
-// pages/photo/editor/editor.js
+import {
+  Config
+} from '../../../utils/config.js';
+const app = getApp();
+
 Page({
 
   /**
@@ -13,9 +17,44 @@ Page({
       textareaAValue: e.detail.value
     })
   },
+  sure(){
+    let that = this;
+    
+    console.log(that.data.textareaAValue);
+    // wx.request({
+    //   url: Config.restUrl + 'addfreepic', //仅为示例，并非真实的接口地址
+    //   data: {
+    //     token: wx.getStorageSync('token'),
+    //     text: that.data.textareaAValue
+    //   },
+    //   method: "POST",
+    //   header: {
+    //     'content-type': 'application/x-www-form-urlencoded' // 默认值
+    //   },
+    //   success(res) {
+    //     console.log(res.data)
+    //     if (res.data.status.state == 1000) {
+       
+    //     }
+    //   }
+    // })
+    console.log(that.data.imgList[0]);
+    wx.uploadFile({
+      url: Config.restUrl + 'addmoment', //仅为示例，非真实的接口地址
+      filePath: that.data.imgList[0],
+      name: 'file_image',
+      formData: {
+        token: wx.getStorageSync('token'),
+        text: that.data.textareaAValue
+      },
+      success(res) {
+        const data = res.data
+      }
+    })
+  },
   ChooseImage() {
     wx.chooseImage({
-      count: 9, //默认9
+      count: 1, //默认9
       sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
       sourceType: ['album'], //从相册选择
       success: (res) => {

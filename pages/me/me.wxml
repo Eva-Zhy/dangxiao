@@ -1,15 +1,15 @@
 <view class="userinfo-v">
   <view class="head-img-v">
-    <image class="head-img" src="../../images/image_1.png"></image>
+    <image class="head-img" src="{{userInfo.avatarUrl}}"></image>
   </view>
-  <view class="head-name">最佳党员001</view>
+  <view class="head-name">{{userInfo.nickName}}</view>
 </view>
-<view class="menu-item">文件办理
-  <view class="message">99</view>
+<view bindtap="goFile" class="menu-item">文件办理
 </view>
-<view class="menu-item">问题回复
+<view bindtap="goQuestion" class="menu-item">问题回复
 </view>
-<view class="menu-item">我的反馈
+<view bindtap="goFeedback" class="menu-item">我的反馈
 </view>
-<view class="menu-item">消息中心
+<view bindtap="goMyMessage" class="menu-item">未读公告
+  <view class="message">{{readNum}}</view>
 </view>

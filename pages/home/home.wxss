@@ -1,0 +1,399 @@
+page {
+  background-color: #fff;
+}
+
+.swiper {
+  height: 435rpx;
+}
+
+.back {
+  border-radius: 10rpx;
+}
+
+.tongzhi {
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.content-v {
+  width: 100%;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.content-line {
+  width: 6rpx;
+  height: 40rpx;
+  float: left;
+  background-color: #e02020;
+}
+
+.content-title-home {
+  width: 100%;
+  margin-top: 40rpx;
+  height: 40rpx;
+  float: left;
+}
+
+.study-v {
+  width: 100%;
+  height: 165rpx;
+  float: left;
+  margin-top: 30rpx;
+}
+
+.news-item {
+  width: 100%;
+  height: 135rpx;
+  float: left;
+  margin-bottom: 30rpx;
+}
+
+.news-item-left {
+  width: 192rpx;
+  height: 135rpx;
+  float: left;
+}
+
+.news-item-title {
+  width: 100%;
+  height: 35rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+  float: left;
+}
+
+.news-item-time {
+  width: 100%;
+  height: 35rpx;
+  font-size: 25rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  line-height: 35rpx;
+  color: #999;
+}
+
+.news-item-content {
+  width: 100%;
+  height: 75rpx;
+  font-size: 28rpx;
+  color: #666;
+  float: left;
+  letter-spacing: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /*要显示的行数*/
+  -webkit-box-orient: vertical;
+}
+
+.news-item-right {
+  width: 453rpx;
+  height: 135rpx;
+  margin-left: 15rpx;
+  float: left;
+}
+
+.news-v {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 30rpx;
+}
+
+.study-item-img {
+  width: 210rpx;
+  height: 125rpx;
+  float: left;
+}
+
+.study-item-text {
+  width: 210rpx;
+  height: 57rpx;
+  margin-top: 10rpx;
+  float: left;
+  color: #666;
+  font-size: 28rpx;
+}
+
+.study-item {
+  width: 210rpx;
+  float: left;
+  height: 210rpx;
+}
+
+.more-v {
+  float: right;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 27rpx;
+  color: #999;
+  margin-right: 5rpx;
+}
+
+.title-text {
+  float: left;
+  line-height: 40rpx;
+  margin-left: 10rpx;
+  font-size: 35rpx;
+  font-weight: 600;
+  color: #414141;
+}
+
+.more-v-img {
+  width: 25rpx;
+  height: 25rpx;
+  float: right;
+  margin-top: 6rpx;
+}
+
+.tz-content {
+  width: 100%;
+  height: 33rpx;
+  padding-left: 5%;
+  margin-top: 33rpx;
+  padding-right: 5%;
+}
+
+.tz-flow {
+  float: right;
+  height: 33rpx;
+  width: 33rpx;
+}
+
+.tz-content-text {
+  width: 480rpx;
+  height: 33rpx;
+  float: left;
+  color: #333;
+  margin-left: 20rpx;
+  font-size: 14px;
+  line-height: 33rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tz-icon {
+  width: 85rpx;
+  height: 33rpx;
+  float: left;
+  border-right: 1px solid rgba(230, 231, 232, 1);
+}
+
+.tz-icon-img {
+  width: 65rpx;
+  height: 33rpx;
+}
+
+.index-icon {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.index-icon-num {
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  background-color: #e02020;
+  position: absolute;
+  color: #fff;
+  font-size: 20rpx;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 99;
+  top: -8rpx;
+  right: 30rpx;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600rpx !important;
+  height: 450rpx !important;
+  overflow: visible;
+}
+
+/* .wrap{ position: relative; margin: 0 10rpx; } */
+
+.text, .html {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.aplyCard {
+  width: 520rpx;
+  height: 90rpx;
+  text-align: center;
+  color: #fff;
+  background: #fe691f;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  margin: 228rpx auto 80rpx;
+  border-radius: 50rpx;
+}
+
+.noCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noCard image {
+  width: 198rpx;
+  height: 232rpx;
+  margin: 124rpx 0 0;
+}
+
+.noCard view {
+  margin: 150rpx 0 32rpx;
+  width: 248rpx;
+  height: 70rpx;
+  color: #fff;
+  background: #ff6315;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 10rpx;
+}
+
+.noCard text {
+  color: #909090;
+  font-size: 22rpx;
+}
+
+swiper .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: 2rpx;
+}
+
+swiper .wx-swiper-dot {
+  width: 28rpx;
+  display: inline-flex;
+  height: 6rpx;
+  margin-left: 10rpx;
+  justify-content: space-between;
+}
+
+swiper .wx-swiper-dot::before {
+  content: '';
+  flex-grow: 1;
+  background: #e6e6e6;
+  border-radius: 8rpx;
+}
+
+swiper .wx-swiper-dot-active::before {
+  background: #fa832d;
+}
+
+swiper image.cradBg {
+  transition: all 0.1s;
+  margin-top: 20rpx;
+}
+
+swiper image.cradBg.active {
+  width: 650rpx !important;
+  /* height: 544rpx!important; */
+  height: 400rpx !important;
+}
+
+swiper image.cradBg.quiet {
+  height: 370rpx;
+  width: 520rpx;
+}
+
+.brandLogo image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100%;
+  margin-top: 19rpx;
+}
+
+.brandLogo {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.txtBox {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 44rpx;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.flag {
+  font-size: 16rpx;
+  background: #fff;
+  opacity: 0.6;
+  color: #fdbc50;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 4rpx 14rpx;
+  top: 44rpx;
+  border-radius: 20rpx 0 0 20rpx;
+}
+
+.plateNum {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  letter-spacing: 1.6rpx;
+}
+
+.color_ {
+  opacity: 0.8;
+}
+
+.line {
+  height: 2rpx;
+  width: 534rpx;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 40rpx 0;
+}
+
+.carType {
+  font-size: 22rpx;
+}
+
+.carShop {
+  font-size: 30rpx;
+}
+
+.cardNum {
+  margin: 22rpx 0 18rpx;
+  display: block;
+}
+
+.name {
+  font-size: 24rpx;
+}

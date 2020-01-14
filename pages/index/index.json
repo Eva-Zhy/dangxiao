@@ -1,3 +1,8 @@
 {
-    "navigationBarTitleText": "首页"
+    "navigationBarTitleText": "",
+    "usingComponents": {
+      "home": "/pages/home/home",
+      "photo": "/pages/photo/photo",
+      "me": "/pages/me/me"
+    }
 }

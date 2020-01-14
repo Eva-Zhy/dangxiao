@@ -47,6 +47,8 @@ page {
   margin-left: 20rpx;
   margin-top: 30rpx;
   margin-right: 20rpx;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 /* 昵称 */

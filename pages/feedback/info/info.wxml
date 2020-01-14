@@ -1,0 +1,11 @@
+<view class="info-v">
+  <view class="info-title">{{value.title}}</view>
+<text style="font-size:14px;font-weight:400;color:rgba(51,51,51,1);" class="text-v">
+    {{value.text}}
+  </text>
+<text style="font-size:12px;font-weight:400;color:rgba(51,51,51,1);" class="text-v">
+    发布时间：{{value.release_time}}
+  </text>
+<text style="font-size:14px;font-weight:400;color:rgba(102,102,102,1);" class="text-v">回复：{{value.feedback}}
+  </text>
+</view>

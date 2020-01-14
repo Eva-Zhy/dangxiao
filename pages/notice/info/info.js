@@ -1,45 +1,31 @@
-import {
-  Config
-} from '../../utils/config.js';
-const app = getApp();
-
+// pages/notice/info/info.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list:[]
+    type:0,
+    value:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getList()
-  },
-  getList:function(){
-    let that = this;
-    wx.request({
-      url: Config.restUrl + 'unreadnotice', //仅为示例，并非真实的接口地址
-      data: {
-        token: wx.getStorageSync("token")
-      },
-      method: "POST",
-      header: {
-        'content-type': 'application/x-www-form-urlencoded' // 默认值
-      },
-      success(res) {
-        console.log(res.data)
-        if (res.data.status.state == 1000) {
-          that.data.list = res.data.content;
-          that.setData({
-            list: that.data.list
-          })
-        }
-      }
+    console.log(options);
+    let type = options.type;
+    let value = JSON.parse(options.value);
+    console.log(value)
+
+    this.data.type = type;
+    this.data.value = value;
+    this.setData({
+      type: this.data.type,
+      value: this.data.value
     })
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

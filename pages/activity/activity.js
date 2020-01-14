@@ -1,20 +1,54 @@
-// pages/activity/activity.js
+import {
+  Config
+} from '../../utils/config.js';
+const app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    list:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this;
+    that.getList();
   },
-
+  goInfo: function (e) {
+    console.log(e);
+    let value = JSON.stringify(e.currentTarget.dataset.value);
+    wx.navigateTo({
+      url: './info/info?value=' + value,
+    })
+  },
+  getList: function(){
+    let that = this;
+    wx.request({
+      url: Config.restUrl + 'activity', //仅为示例，并非真实的接口地址
+      data: {
+        token: wx.getStorageSync("token"),
+        action:0
+      },
+      method: "POST",
+      header: {
+        'content-type': 'application/x-www-form-urlencoded' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        if (res.data.status.state == 1000) {
+          that.data.list = res.data.content;
+          that.setData({
+            list: that.data.list
+          })
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

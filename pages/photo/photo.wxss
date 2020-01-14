@@ -11,7 +11,7 @@ page {
   position: relative;
 }
 
-.head-img {
+.head-img-photo {
   width: 180rpx;
   height: 180rpx;
   border-radius: 50%;
@@ -67,7 +67,7 @@ page {
   white-space: nowrap;
 }
 
-.content-v {
+.content-v-photo {
   width: 100vw;
   height: auto;
   padding-left: 5%;
@@ -111,7 +111,7 @@ page {
   height: 120rpx;
 }
 
-.head-name {
+.head-name-photo {
   width: 400rpx;
   font-size: 35rpx;
   color: #fff;

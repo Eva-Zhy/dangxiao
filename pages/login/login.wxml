@@ -2,18 +2,21 @@
 <view class="title2">党建智慧平台</view>
 
 <view style="margin-top:100rpx;" class="input-v">
-  <input class="user-inp" placeholder="请输入用户名">
+  <input bindinput='usernameInput' value='{{username}}' class="user-inp" placeholder="请输入用户名">
   </input>
 </view>
 <view class="input-v">
-  <input class="user-inp" type="password" placeholder="请输入密码">
+  <input bindinput='passwordInput' value='{{password}}' class="user-inp" type="password" placeholder="请输入密码">
   </input>
 </view>
 
 <view class="menu-v">
-  <checkbox class="check-box red"></checkbox>
+
+<checkbox-group  bindchange="niming">
+  <checkbox checked="{{check}}" value="记住密码" class="check-box red"></checkbox>
+</checkbox-group>
   <view class="menu-t1">记住密码</view>
-  <view class="menu-t2">忘记密码</view>
+  <!-- <view class="menu-t2">忘记密码</view> -->
 </view>
 
-<button class="sure">登录</button>
+<button bindgetuserinfo="login" open-type="getUserInfo"  class="sure">登录</button>

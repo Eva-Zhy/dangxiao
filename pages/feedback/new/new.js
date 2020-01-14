@@ -1,11 +1,16 @@
-// pages/feedback/new/new.js
+import {
+  Config
+} from '../../../utils/config.js';
+const app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    title:"",
+    content:""
   },
 
   /**
@@ -14,7 +19,50 @@ Page({
   onLoad: function (options) {
 
   },
+  sure:function(){
+    let that = this;
+    console.log(that.data.content);
+    console.log(that.data.title);
 
+    wx.request({
+      url: Config.restUrl + 'feedback', //仅为示例，并非真实的接口地址
+      data: {
+        token: wx.getStorageSync("token"),
+        action:0,
+        title: that.data.title,
+        text: that.data.content
+      },
+      method: "POST",
+      header: {
+        'content-type': 'application/x-www-form-urlencoded' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        if (res.data.status.state == 1000) {
+          wx.showToast({
+            title: '提交成功',
+            icon: 'none',
+            duration: 2000
+          })
+          setTimeout(function(){
+              wx.navigateBack({
+                delta: 1
+              })
+          },2000);
+        }
+      }
+    })
+  },
+  textareaAInput(e) {
+    this.setData({
+      content: e.detail.value
+    })
+  },
+  titleInput(e) {
+    this.setData({
+      title: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

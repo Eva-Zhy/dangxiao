@@ -6,71 +6,47 @@
   </view>
 </scroll-view>
 <view wx:if="{{TabCur == 0}}" class="content-v">
-  <view class="zcwj-item">
-    <view class="zcwj-item-left">• 中国共产党党内法规执行</view>
-    <view class="zcwj-item-right">2019-12-18</view>
+  <view bindtap="goInfo" data-type="0" data-value="{{item}}" class="zcwj-item" wx:for="{{list1}}">
+    <view class="zcwj-item-left">• {{item.title}}</view>
+    <view class="zcwj-item-right">{{item.release_time}}</view>
   </view>
-  <view class="zcwj-item">
-    <view class="zcwj-item-left">• 中国共产党党内法规执行</view>
-    <view class="zcwj-item-right">2019-12-18</view>
-  </view>
-  <view class="zcwj-item">
-    <view class="zcwj-item-left">• 中国共产党党内法规执行</view>
-    <view class="zcwj-item-right">2019-12-18</view>
-  </view>
+  
 </view>
 
 <view wx:if="{{TabCur == 1}}" class="content-v">
-  <view class="news-item">
+  <view bindtap="goInfo" data-type="1" data-value="{{item}}" wx:for="{{list2}}" class="news-item">
     <view class="news-item-left">
-      <image class="img100" src="../../images/2.png"></image>
+      <image class="img100" src="{{item.image_path}}"></image>
     </view>
     <view class="news-item-right">
-      <view class="news-item-title">中国共产党党内法规执行责任制规定</view>
-      <view class="news-item-content">9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民</view>
-      <view class="news-item-time">2019-12-26</view>
+      <view class="news-item-title">{{item.title}}</view>
+      <view class="news-item-content">{{item.text}}</view>
+      <view class="news-item-time">{{item.release_time}}</view>
     </view>
   </view>
 </view>
 
 <view wx:if="{{TabCur == 2}}" class="content-v">
-  <view class="message-item">
-    <view class="message-item-title">中国共产党党内法规执行责任制规定</view>
+  <view bindtap="goMsgInfo"  data-value="{{item}}" wx:for="{{list3}}" class="message-item">
+    <view class="message-item-title">{{item.title}}</view>
     <view class="message-item-content">
       <text style="color:#E5B224;  font-weight: 600;">附件 </text>
-      <text>9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民楷模”“人民楷模”“人民楷模”</text>
+      <text>{{item.text}}</text>
     </view>
-    <view class="message-item-time">2019-12-19</view>
-  </view>
-  <view class="message-item">
-    <view class="message-item-title">中国共产党党内法规执行责任制规定</view>
-    <view class="message-item-content">
-      <text style="color:#E5B224;  font-weight: 600;">附件 </text>
-      <text>9月25日下午，自治区党委书记、人大常委会主任李纪恒在呼和浩特看望慰问荣获“人民楷模”“人民楷模”“人民楷模”</text>
-    </view>
-    <view class="message-item-time">2019-12-19</view>
+    <view class="message-item-time">{{item.release_time}}</view>
   </view>
 </view>
 
 <view wx:if="{{TabCur == 3}}" class="content-v">
-  <view class="file-item">
+  <view bindtap="preview" data-value="{{item}}"  wx:for="{{list4}}" class="file-item">
     <view class="file-item-left">
       <image class="img100" src="../../images/pdf@2x.png"></image>
     </view>
     <view class="file-item-min">
-      <view class="file-item-title">中国共产党党内法规执行责任制规定</view>
-      <view class="file-item-max">5.26M</view>
+      <view class="file-item-title">{{item.name}}</view>
+      <view class="file-item-max">{{item.size}}</view>
     </view>
-    <view class="file-item-right">2019-12-18</view>
+    <view class="file-item-right">{{item.upload_time}}</view>
   </view>
-  <view class="file-item">
-    <view class="file-item-left">
-      <image class="img100" src="../../images/pdf@2x.png"></image>
-    </view>
-    <view class="file-item-min">
-      <view class="file-item-title">中国共产党党内法规执行责任制规定</view>
-      <view class="file-item-max">5.26M</view>
-    </view>
-    <view class="file-item-right">2019-12-18</view>
-  </view>
+ 
 </view>

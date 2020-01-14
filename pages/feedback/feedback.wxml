@@ -1,63 +1,14 @@
 <scroll-view scroll-y="true" class="view-v">
   <view class="content-v">
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题问题标题问题标题问题标题问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
+    <view bindtap="goInfo" data-value="{{item}}" wx:for="{{list}}" class="zcwj-item">
+      <view class="zcwj-item-left">{{item.title}}</view>
+      <view wx:if="{{item.feedback !=''&&item.feedback !=null}}" class="file-item-status">已批复</view>
+       <view style="background:rgba(203,42,42,1);color:#fff;" wx:if="{{item.feedback =='' || item.feedback ==null}}" class="file-item-status">未批复</view>
+      <view class="zcwj-item-right">{{item.release_time}}</view>
     </view>
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
-    </view>
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
-    </view>
-    
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
-    </view>
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
-    </view>
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
-    </view>
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
-    </view>
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
-    </view>
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
-    </view>
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
-    </view>
-    <view class="zcwj-item">
-      <view class="zcwj-item-left">问题标题</view>
-      <view class="file-item-status">已批复</view>
-      <view class="zcwj-item-right">2019-12-18</view>
-    </view>
+   
   </view>
 </scroll-view>
-<view class="new">
+<view bindtap="new" class="new">
   <image class="img100" src="../../images/button_6@2x.png"></image>
 </view>

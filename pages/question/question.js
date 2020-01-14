@@ -1,13 +1,19 @@
 // pages/CircleFriends/CircleFriends.js
-var app = getApp()
-var that
+// pages/vrStudy/vrStudy.js
+import {
+  Config
+} from '../../utils/config.js';
+const app = getApp();
 
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    DataSource: [1],
+    // DataSource: [1],
+    showBtn: false,
+    inputShowed:false,
+    sendMessage:'',
     name: "党员001",
     time: "2019年12月21日",
     icon: '../../images/image_1.png',
@@ -15,13 +21,82 @@ Page({
  
     // photoWidth: wx.getSystemInfoSync().windowWidth / 5,
     photoWidth: 88,
+    list:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    that = this
+    let that = this;
+    that.getList()
+  },
+  sendInput: function (e) {
+    this.setData({
+      sendMessage: e.detail.value
+    })
+  },
+  send:function(){
+    let that = this;
+    console.log(that.data.sendMessage);
+    wx.request({
+      url: Config.restUrl + 'feedback', //仅为示例，并非真实的接口地址
+      data: {
+        token: wx.getStorageSync('token'),
+        action:1,
+        feedback_id: that.data.feedback_id,
+        feedback: that.data.sendMessage
+      },
+      method: "POST",
+      header: {
+        'content-type': 'application/x-www-form-urlencoded' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        if (res.data.status.state == 1000) {
+          that.getList()
+        }
+      }
+    })
+  },
+  getList: function(){
+    let that = this;
+    wx.request({
+      url: Config.restUrl + 'readface', //仅为示例，并非真实的接口地址
+      data: {
+        token: wx.getStorageSync('token')
+      },
+      method: "POST",
+      header: {
+        'content-type': 'application/x-www-form-urlencoded' // 默认值
+      },
+      success(res) {
+        console.log(res.data)
+        if (res.data.status.state == 1000) {
+          that.data.list = res.data.content;
+          that.data.sendMessage = "";
+          that.data.inputShowed = false;
+          that.data.showBtn = false;
+          that.setData({
+            sendMessage: "",
+            showBtn: false,
+            inputShowed: false,
+            list: that.data.list
+          });
+          that.getList();
+        }
+      }
+    })
+  },
+  huifu:function(e){
+    console.log(e);
+    this.data.showBtn = true;
+    this.data.inputShowed = true;
+    this.data.feedback_id = e.currentTarget.dataset.id;
+    this.setData({
+      showBtn: this.data.showBtn,
+      inputShowed: this.data.inputShowed
+    })
   },
   // 点击图片进行大图查看
   LookPhoto: function (e) {

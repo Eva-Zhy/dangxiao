@@ -1,0 +1,14 @@
+<view class="info-v">
+  <view class="info-title">{{value.title}}</view>
+  <view wx:if="{{type==0}}" class="info-msg">{{value.number}}</view>
+  <view wx:if="{{type==1}}" class="info-msg">
+    <view class="info-time"></view>
+    <view class="info-from"></view>
+  </view>
+  <view wx:if="{{value.image_path}}" class="info-img">
+    <image class="img100" src="{{value.image_path}}"></image>
+  </view>
+  <view class="text-v">
+    {{value.text}}
+  </view>
+</view>
